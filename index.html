@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="password"],
+    textarea {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+    }
+    
+    select {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+    }
+    
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+    
+    button {
+        padding: 8px 16px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+<body>
+    <form>
+        <!-- Controles -->
+        <h2>Controles</h2>
+        <label for="etiqueta">Etiqueta:</label>
+        <input type="text" id="etiqueta" name="etiqueta"><br><br>
+        
+        <label for="areaTexto">Área de texto:</label><br>
+        <textarea id="areaTexto" name="areaTexto" rows="4" cols="30"></textarea><br><br>
+        
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena"><br><br>
+        <hr>
+        
+        <!-- Controles de selección -->
+        <h2>Controles de selección</h2>
+        <label for="colorLista">Color favorito (lista):</label>
+        <select id="colorLista" name="colorLista">
+            <option value="rojo">Rojo</option>
+            <option value="azul">Azul</option>
+            <option value="verde">Verde</option>
+        </select><br><br>
+        
+        <label for="colorRadio">Color favorito (radio):</label><br>
+        <input type="radio" id="rojoRadio" name="colorRadio" value="rojo">
+        <label for="rojoRadio">Rojo</label><br>
+        <input type="radio" id="azulRadio" name="colorRadio" value="azul">
+        <label for="azulRadio">Azul</label><br>
+        <input type="radio" id="verdeRadio" name="colorRadio" value="verde">
+        <label for="verdeRadio">Verde</label><br><br>
+        
+        <label for="colorCheckbox">Color favorito (checkbox):</label><br>
+        <input type="checkbox" id="rojoCheckbox" name="colorCheckbox" value="rojo">
+        <label for="rojoCheckbox">Rojo</label><br>
+        <input type="checkbox" id="azulCheckbox" name="colorCheckbox" value="azul">
+        <label for="azulCheckbox">Azul</label><br>
+        <input type="checkbox" id="verdeCheckbox" name="colorCheckbox" value="verde">
+        <label for="verdeCheckbox">Verde</label><br><br>
+        <hr>
+        
+        <!-- Botones -->
+        <h2>Botones</h2>
+        <button type="submit" name="enviar">Enviar información</button>
+        <button type="reset" name="borrar">Borrar información</button>
+        <button type="button" name="boton">Botón</button><br><br>
+        <hr>
+        
+        <!-- Otros componentes -->
+        <h2>Otros componentes</h2>
+        <button type="button" name="descargar">Descargar imagen</button>
+    </form>
+</body>
+</html>
